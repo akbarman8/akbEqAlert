@@ -14,3 +14,36 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+
+#import "NSString+Extension.h"
+#import "ABCommonUtils.h"
+
+//----------------------------------------------------------------------------------------------------------------------
+#pragma mark - Notifications -
+//----------------------------------------------------------------------------------------------------------------------
+#define NOTIFICATION_POST(key, from)    [[NSNotificationCenter defaultCenter] postNotificationName:key object:from]
+#define NOTIFICATION_REMOVE(key, from)  [[NSNotificationCenter defaultCenter] removeObserver:from name:key object:nil]
+#define DIRTYFLAG_CHANGE_DONE           [[[NSDocumentController sharedDocumentController] currentDocument] updateChangeCount:NSChangeDone]
+#define DIRTYFLAG_CHANGE_RESET          [[[NSDocumentController sharedDocumentController] currentDocument] updateChangeCount:NSChangeCleared];
+
+//----------------------------------------------------------------------------------------------------------------------
+#define EXECUTE_BLOCK_ON_BG_THREAD(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), block)
+#define EXECUTE_BLOCK_ON_MAIN_THREAD(block) dispatch_sync(dispatch_get_main_queue(), block)
+
+//----------------------------------------------------------------------------------------------------------------------
+#pragma mark - method call -
+//----------------------------------------------------------------------------------------------------------------------
+#define EMPTY_STRING            @""
+
+#define BOOL2TEXT(val)          val ? @"true" : @"false"
+#define FLOAT2STR(val)          [NSString stringWithFormat:@"%.0f", val]
+#define FORMAT(...)             [NSString stringWithFormat:__VA_ARGS__]
+#define INT2STR(val)            [NSString stringWithFormat:@"%d", val]
+#define SAFE_RELEASE(obj)       obj = nil;
+#define ERROR_UI_SET(obj)       [NSDictionary dictionaryWithObject:[obj stringFromData] forKey:HTTP_STATUS]
+#define ERROR_UI_GET(obj)       [[error userInfo] valueForKey:HTTP_STATUS]
+#define ERROR_DEFAULT(msg)      [NSError errorWithDomain:msg code:-1 userInfo:nil]
+
+
+static const NSString *serverUrl = @"http://earthquake.usgs.gov/earthquakes/feed/v1.0/";

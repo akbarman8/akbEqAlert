@@ -1,50 +1,35 @@
 //
-//  DetailViewController.m
+//  DescriptionViewController.m
 //  EarthQuakeAlert
 //
-//  Created by Amit Kumar Barman on 8/1/14.
+//  Created by Amit Kumar Barman on 8/2/14.
 //  Copyright (c) 2014 Dooars Solution. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "DescriptionViewController.h"
 
-@interface DetailViewController ()
+@interface DescriptionViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
-- (void)configureView;
+
+
 @end
 
-@implementation DetailViewController
+@implementation DescriptionViewController
 
-#pragma mark - Managing the detail item
-
-- (void)setDetailItem:(id)newDetailItem
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
     }
-
-    if (self.masterPopoverController != nil) {
-        [self.masterPopoverController dismissPopoverAnimated:YES];
-    }        
-}
-
-- (void)configureView
-{
-    // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
+    return self;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
+    // Do any additional setup after loading the view from its nib.
+    self.navigationItem.backBarButtonItem = [ABCommonUtils backButton];
 }
 
 - (void)didReceiveMemoryWarning

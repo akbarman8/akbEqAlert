@@ -55,5 +55,23 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>EQSettingData</key>
+	<dict>
+		<key>EQType</key>
+		<array>
+			<string>Significant Earthquakes</string>
+			<string>M4.5+ Earthquakes</string>
+			<string>M2.5+ Earthquakes</string>
+			<string>M1.0+ Earthquakes</string>
+			<string>All Earthquakes</string>
+		</array>
+		<key>EQDuration</key>
+		<array>
+			<string>Past Hour</string>
+			<string>Past Day</string>
+			<string>Past 7 Days</string>
+			<string>Past 30 Days</string>
+		</array>
+	</dict>
 </dict>
 </plist>

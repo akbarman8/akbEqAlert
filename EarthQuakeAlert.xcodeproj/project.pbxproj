@@ -7,22 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2853230F19A6F41E005DFF97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 285322E519A6F41E005DFF97 /* AppDelegate.m */; };
+		2853231019A6F41E005DFF97 /* DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 285322E719A6F41E005DFF97 /* DescriptionViewController.m */; };
+		2853231119A6F41E005DFF97 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 285322E919A6F41E005DFF97 /* DetailViewController.m */; };
+		2853231219A6F41E005DFF97 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 285322EB19A6F41E005DFF97 /* MasterViewController.m */; };
+		2853231619A6F41E005DFF97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285322F419A6F41E005DFF97 /* Images.xcassets */; };
+		2853231719A6F41E005DFF97 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 285322F719A6F41E005DFF97 /* background.png */; };
+		2853231819A6F41E005DFF97 /* cellBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 285322F819A6F41E005DFF97 /* cellBg.png */; };
+		2853231919A6F41E005DFF97 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 285322F919A6F41E005DFF97 /* InfoPlist.strings */; };
+		2853231A19A6F41E005DFF97 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285322FA19A6F41E005DFF97 /* Main_iPad.storyboard */; };
+		2853231B19A6F41E005DFF97 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285322FB19A6F41E005DFF97 /* Main_iPhone.storyboard */; };
+		2853232B19A6F4C9005DFF97 /* ABCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853232519A6F4C9005DFF97 /* ABCommonUtils.m */; };
+		2853232C19A6F4C9005DFF97 /* ABParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853232719A6F4C9005DFF97 /* ABParser.m */; };
+		2853232D19A6F4C9005DFF97 /* ABRestInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853232919A6F4C9005DFF97 /* ABRestInterface.m */; };
+		2853233219A6F57B005DFF97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853233019A6F57B005DFF97 /* main.m */; };
 		286C8FA9198BF35500B57E9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286C8FA8198BF35500B57E9A /* Foundation.framework */; };
 		286C8FAB198BF35500B57E9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286C8FAA198BF35500B57E9A /* CoreGraphics.framework */; };
 		286C8FAD198BF35500B57E9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286C8FAC198BF35500B57E9A /* UIKit.framework */; };
-		286C8FB3198BF35500B57E9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 286C8FB1198BF35500B57E9A /* InfoPlist.strings */; };
-		286C8FB5198BF35500B57E9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 286C8FB4198BF35500B57E9A /* main.m */; };
-		286C8FB9198BF35500B57E9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 286C8FB8198BF35500B57E9A /* AppDelegate.m */; };
-		286C8FBC198BF35500B57E9A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286C8FBA198BF35500B57E9A /* Main_iPhone.storyboard */; };
-		286C8FBF198BF35500B57E9A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286C8FBD198BF35500B57E9A /* Main_iPad.storyboard */; };
-		286C8FC2198BF35500B57E9A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286C8FC1198BF35500B57E9A /* MasterViewController.m */; };
-		286C8FC5198BF35500B57E9A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286C8FC4198BF35500B57E9A /* DetailViewController.m */; };
-		286C8FC7198BF35500B57E9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286C8FC6198BF35500B57E9A /* Images.xcassets */; };
 		286C8FCE198BF35500B57E9A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286C8FCD198BF35500B57E9A /* XCTest.framework */; };
 		286C8FCF198BF35500B57E9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286C8FA8198BF35500B57E9A /* Foundation.framework */; };
 		286C8FD0198BF35500B57E9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286C8FAC198BF35500B57E9A /* UIKit.framework */; };
 		286C8FD8198BF35500B57E9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 286C8FD6198BF35500B57E9A /* InfoPlist.strings */; };
 		286C8FDA198BF35500B57E9A /* EarthQuakeAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 286C8FD9198BF35500B57E9A /* EarthQuakeAlertTests.m */; };
+		286C8FED198BFC9000B57E9A /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 286C8FEC198BFC9000B57E9A /* NSString+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,28 +43,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		285322E419A6F41E005DFF97 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		285322E519A6F41E005DFF97 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		285322E619A6F41E005DFF97 /* DescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionViewController.h; sourceTree = "<group>"; };
+		285322E719A6F41E005DFF97 /* DescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionViewController.m; sourceTree = "<group>"; };
+		285322E819A6F41E005DFF97 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		285322E919A6F41E005DFF97 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		285322EA19A6F41E005DFF97 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		285322EB19A6F41E005DFF97 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		285322F419A6F41E005DFF97 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		285322F719A6F41E005DFF97 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		285322F819A6F41E005DFF97 /* cellBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellBg.png; sourceTree = "<group>"; };
+		285322F919A6F41E005DFF97 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		285322FA19A6F41E005DFF97 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		285322FB19A6F41E005DFF97 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		2853232419A6F4C9005DFF97 /* ABCommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCommonUtils.h; sourceTree = "<group>"; };
+		2853232519A6F4C9005DFF97 /* ABCommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCommonUtils.m; sourceTree = "<group>"; };
+		2853232619A6F4C9005DFF97 /* ABParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABParser.h; sourceTree = "<group>"; };
+		2853232719A6F4C9005DFF97 /* ABParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABParser.m; sourceTree = "<group>"; };
+		2853232819A6F4C9005DFF97 /* ABRestInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABRestInterface.h; sourceTree = "<group>"; };
+		2853232919A6F4C9005DFF97 /* ABRestInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABRestInterface.m; sourceTree = "<group>"; };
+		2853232A19A6F4C9005DFF97 /* WFMLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFMLocalization.h; sourceTree = "<group>"; };
+		2853232E19A6F57B005DFF97 /* EarthQuakeAlert-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "EarthQuakeAlert-Info.plist"; path = "EarthQuakeAlert/EarthQuakeAlert-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2853232F19A6F57B005DFF97 /* EarthQuakeAlert-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EarthQuakeAlert-Prefix.pch"; path = "EarthQuakeAlert/EarthQuakeAlert-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		2853233019A6F57B005DFF97 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EarthQuakeAlert/main.m; sourceTree = SOURCE_ROOT; };
 		286C8FA5198BF35500B57E9A /* EarthQuakeAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthQuakeAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286C8FA8198BF35500B57E9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		286C8FAA198BF35500B57E9A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		286C8FAC198BF35500B57E9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		286C8FB0198BF35500B57E9A /* EarthQuakeAlert-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EarthQuakeAlert-Info.plist"; sourceTree = "<group>"; };
-		286C8FB2198BF35500B57E9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		286C8FB4198BF35500B57E9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		286C8FB6198BF35500B57E9A /* EarthQuakeAlert-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EarthQuakeAlert-Prefix.pch"; sourceTree = "<group>"; };
-		286C8FB7198BF35500B57E9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		286C8FB8198BF35500B57E9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		286C8FBB198BF35500B57E9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		286C8FBE198BF35500B57E9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		286C8FC0198BF35500B57E9A /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		286C8FC1198BF35500B57E9A /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		286C8FC3198BF35500B57E9A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		286C8FC4198BF35500B57E9A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		286C8FC6198BF35500B57E9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		286C8FCC198BF35500B57E9A /* EarthQuakeAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthQuakeAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		286C8FCD198BF35500B57E9A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		286C8FD5198BF35500B57E9A /* EarthQuakeAlertTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EarthQuakeAlertTests-Info.plist"; sourceTree = "<group>"; };
 		286C8FD7198BF35500B57E9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		286C8FD9198BF35500B57E9A /* EarthQuakeAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarthQuakeAlertTests.m; sourceTree = "<group>"; };
+		286C8FEB198BFC9000B57E9A /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		286C8FEC198BFC9000B57E9A /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +104,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		285322E319A6F41E005DFF97 /* ABViewController */ = {
+			isa = PBXGroup;
+			children = (
+				285322E419A6F41E005DFF97 /* AppDelegate.h */,
+				285322E519A6F41E005DFF97 /* AppDelegate.m */,
+				285322E619A6F41E005DFF97 /* DescriptionViewController.h */,
+				285322E719A6F41E005DFF97 /* DescriptionViewController.m */,
+				285322E819A6F41E005DFF97 /* DetailViewController.h */,
+				285322E919A6F41E005DFF97 /* DetailViewController.m */,
+				285322EA19A6F41E005DFF97 /* MasterViewController.h */,
+				285322EB19A6F41E005DFF97 /* MasterViewController.m */,
+			);
+			path = ABViewController;
+			sourceTree = "<group>";
+		};
+		285322F519A6F41E005DFF97 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				285322F619A6F41E005DFF97 /* Icons */,
+				285322F919A6F41E005DFF97 /* InfoPlist.strings */,
+				285322FA19A6F41E005DFF97 /* Main_iPad.storyboard */,
+				285322FB19A6F41E005DFF97 /* Main_iPhone.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		285322F619A6F41E005DFF97 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				285322F719A6F41E005DFF97 /* background.png */,
+				285322F819A6F41E005DFF97 /* cellBg.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		2853230A19A6F41E005DFF97 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2853232E19A6F57B005DFF97 /* EarthQuakeAlert-Info.plist */,
+				2853232F19A6F57B005DFF97 /* EarthQuakeAlert-Prefix.pch */,
+				2853233019A6F57B005DFF97 /* main.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2853232319A6F4C9005DFF97 /* ABWebService */ = {
+			isa = PBXGroup;
+			children = (
+				2853232419A6F4C9005DFF97 /* ABCommonUtils.h */,
+				2853232519A6F4C9005DFF97 /* ABCommonUtils.m */,
+				2853232619A6F4C9005DFF97 /* ABParser.h */,
+				2853232719A6F4C9005DFF97 /* ABParser.m */,
+				2853232819A6F4C9005DFF97 /* ABRestInterface.h */,
+				2853232919A6F4C9005DFF97 /* ABRestInterface.m */,
+				2853232A19A6F4C9005DFF97 /* WFMLocalization.h */,
+			);
+			path = ABWebService;
+			sourceTree = "<group>";
+		};
 		286C8F9C198BF35500B57E9A = {
 			isa = PBXGroup;
 			children = (
@@ -117,29 +196,14 @@
 		286C8FAE198BF35500B57E9A /* EarthQuakeAlert */ = {
 			isa = PBXGroup;
 			children = (
-				286C8FB7198BF35500B57E9A /* AppDelegate.h */,
-				286C8FB8198BF35500B57E9A /* AppDelegate.m */,
-				286C8FBA198BF35500B57E9A /* Main_iPhone.storyboard */,
-				286C8FBD198BF35500B57E9A /* Main_iPad.storyboard */,
-				286C8FC0198BF35500B57E9A /* MasterViewController.h */,
-				286C8FC1198BF35500B57E9A /* MasterViewController.m */,
-				286C8FC3198BF35500B57E9A /* DetailViewController.h */,
-				286C8FC4198BF35500B57E9A /* DetailViewController.m */,
-				286C8FC6198BF35500B57E9A /* Images.xcassets */,
-				286C8FAF198BF35500B57E9A /* Supporting Files */,
+				285322F419A6F41E005DFF97 /* Images.xcassets */,
+				286C8FEA198BFC9000B57E9A /* ABExtension */,
+				285322E319A6F41E005DFF97 /* ABViewController */,
+				2853232319A6F4C9005DFF97 /* ABWebService */,
+				285322F519A6F41E005DFF97 /* Resource */,
+				2853230A19A6F41E005DFF97 /* SupportingFiles */,
 			);
 			path = EarthQuakeAlert;
-			sourceTree = "<group>";
-		};
-		286C8FAF198BF35500B57E9A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				286C8FB0198BF35500B57E9A /* EarthQuakeAlert-Info.plist */,
-				286C8FB1198BF35500B57E9A /* InfoPlist.strings */,
-				286C8FB4198BF35500B57E9A /* main.m */,
-				286C8FB6198BF35500B57E9A /* EarthQuakeAlert-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		286C8FD3198BF35500B57E9A /* EarthQuakeAlertTests */ = {
@@ -158,6 +222,15 @@
 				286C8FD6198BF35500B57E9A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		286C8FEA198BFC9000B57E9A /* ABExtension */ = {
+			isa = PBXGroup;
+			children = (
+				286C8FEB198BFC9000B57E9A /* NSString+Extension.h */,
+				286C8FEC198BFC9000B57E9A /* NSString+Extension.m */,
+			);
+			path = ABExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,10 +309,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				286C8FBF198BF35500B57E9A /* Main_iPad.storyboard in Resources */,
-				286C8FC7198BF35500B57E9A /* Images.xcassets in Resources */,
-				286C8FBC198BF35500B57E9A /* Main_iPhone.storyboard in Resources */,
-				286C8FB3198BF35500B57E9A /* InfoPlist.strings in Resources */,
+				2853231719A6F41E005DFF97 /* background.png in Resources */,
+				2853231819A6F41E005DFF97 /* cellBg.png in Resources */,
+				2853231A19A6F41E005DFF97 /* Main_iPad.storyboard in Resources */,
+				2853231619A6F41E005DFF97 /* Images.xcassets in Resources */,
+				2853231B19A6F41E005DFF97 /* Main_iPhone.storyboard in Resources */,
+				2853231919A6F41E005DFF97 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,10 +333,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				286C8FB9198BF35500B57E9A /* AppDelegate.m in Sources */,
-				286C8FC2198BF35500B57E9A /* MasterViewController.m in Sources */,
-				286C8FB5198BF35500B57E9A /* main.m in Sources */,
-				286C8FC5198BF35500B57E9A /* DetailViewController.m in Sources */,
+				286C8FED198BFC9000B57E9A /* NSString+Extension.m in Sources */,
+				2853232C19A6F4C9005DFF97 /* ABParser.m in Sources */,
+				2853232D19A6F4C9005DFF97 /* ABRestInterface.m in Sources */,
+				2853231219A6F41E005DFF97 /* MasterViewController.m in Sources */,
+				2853230F19A6F41E005DFF97 /* AppDelegate.m in Sources */,
+				2853232B19A6F4C9005DFF97 /* ABCommonUtils.m in Sources */,
+				2853231019A6F41E005DFF97 /* DescriptionViewController.m in Sources */,
+				2853231119A6F41E005DFF97 /* DetailViewController.m in Sources */,
+				2853233219A6F57B005DFF97 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,30 +364,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		286C8FB1198BF35500B57E9A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				286C8FB2198BF35500B57E9A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		286C8FBA198BF35500B57E9A /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				286C8FBB198BF35500B57E9A /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		286C8FBD198BF35500B57E9A /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				286C8FBE198BF35500B57E9A /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		286C8FD6198BF35500B57E9A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -399,6 +455,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EarthQuakeAlert/EarthQuakeAlert-Prefix.pch";
 				INFOPLIST_FILE = "EarthQuakeAlert/EarthQuakeAlert-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -412,6 +469,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EarthQuakeAlert/EarthQuakeAlert-Prefix.pch";
 				INFOPLIST_FILE = "EarthQuakeAlert/EarthQuakeAlert-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -476,6 +534,7 @@
 				286C8FDF198BF35500B57E9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		286C8FE0198BF35500B57E9A /* Build configuration list for PBXNativeTarget "EarthQuakeAlertTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +543,7 @@
 				286C8FE2198BF35500B57E9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
