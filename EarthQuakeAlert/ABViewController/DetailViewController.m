@@ -10,15 +10,10 @@
 #import "ABRestInterface.h"
 #import "ABParser.h"
 
-NSInteger selectedIndex;
-static CGFloat expandedHeight = 100.0;
-static CGFloat contractedHeight = 44.0;
-
 @interface DetailViewController ()
 
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 @property (strong, nonatomic) IBOutlet UITableView *tableview;
-@property (strong, nonatomic) IBOutlet UITableViewCell *tableCell;
 @property (strong, nonatomic) NSArray *sections;
 
 - (void)configureView;
@@ -53,7 +48,6 @@ static CGFloat contractedHeight = 44.0;
     
     self.navigationItem.backBarButtonItem = [ABCommonUtils backButton];
     self.tableview.backgroundView = [ABCommonUtils backgroundView:nil];
-    selectedIndex = 0;
 }
 
 - (void)viewDidLoad
@@ -89,11 +83,12 @@ static CGFloat contractedHeight = 44.0;
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.sections.count;
+    return 1;
 }
 
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return self.sections.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -130,20 +125,7 @@ static CGFloat contractedHeight = 44.0;
 //    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
 //        self.detailViewController.detailItem = [self.sections objectForKey:@"SettingData"];
 //    }
-//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-//    NSLog(@"indexpath is %ld", indexPath.row);
-//    selectedIndex = indexPath.row;
-//    isSearching = YES;
-    
     [self.tableview beginUpdates];
-    
-//    static NSString *CellIdentifier = @"Cell";
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-//    cell.textLabel.text=@"mnxbcnbxznmbc";//[array objectAtIndex:indexPath.row];
-//    cell.detailTextLabel.text=@"cbxzmbcmbxz";//[detailarray objectAtIndex:indexPath.row];
-//    
-//    cell.detailTextLabel.hidden = NO;
-    
     [self.tableview endUpdates];
     
 }
@@ -162,29 +144,6 @@ static CGFloat contractedHeight = 44.0;
 //    [[segue destinationViewController] setDetailItem:[self.sections objectForKey:@"SettingData"]];
     //    }
 }
-
-//
-//
-//
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//    return self.sections.count;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    GCRetractableSectionController* sectionController = [self.sections objectAtIndex:section];
-//    return sectionController.numberOfRow;
-//}
-//
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    GCRetractableSectionController* sectionController = [self.sections objectAtIndex:indexPath.section];
-//    return [sectionController cellForRow:indexPath.row];
-//}
-//
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    GCRetractableSectionController* sectionController = [self.sections objectAtIndex:indexPath.section];
-//    return [sectionController didSelectCellAtRow:indexPath.row];
-//}
-
 
 
 @end
