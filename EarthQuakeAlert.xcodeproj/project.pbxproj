@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0015ECBB008E4586A0E1A0D5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B501C93EA44D799BF1EE7C /* libPods.a */; };
 		2853230F19A6F41E005DFF97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 285322E519A6F41E005DFF97 /* AppDelegate.m */; };
 		2853231019A6F41E005DFF97 /* DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 285322E719A6F41E005DFF97 /* DescriptionViewController.m */; };
 		2853231119A6F41E005DFF97 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 285322E919A6F41E005DFF97 /* DetailViewController.m */; };
@@ -21,6 +22,14 @@
 		2853232C19A6F4C9005DFF97 /* ABParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853232719A6F4C9005DFF97 /* ABParser.m */; };
 		2853232D19A6F4C9005DFF97 /* ABRestInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853232919A6F4C9005DFF97 /* ABRestInterface.m */; };
 		2853233219A6F57B005DFF97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853233019A6F57B005DFF97 /* main.m */; };
+		2856088819A9917A00E9874E /* sectionarrow_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 2856088019A9917A00E9874E /* sectionarrow_down.png */; };
+		2856088919A9917A00E9874E /* sectionarrow_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2856088119A9917A00E9874E /* sectionarrow_down@2x.png */; };
+		2856088A19A9917A00E9874E /* sectionheader_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 2856088219A9917A00E9874E /* sectionheader_blue.png */; };
+		2856088B19A9917A00E9874E /* sectionheader_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2856088319A9917A00E9874E /* sectionheader_blue@2x.png */; };
+		2856088C19A9917A00E9874E /* sectionheader.png in Resources */ = {isa = PBXBuildFile; fileRef = 2856088419A9917A00E9874E /* sectionheader.png */; };
+		2856088D19A9917A00E9874E /* sectionheader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2856088519A9917A00E9874E /* sectionheader@2x.png */; };
+		2856088E19A9917A00E9874E /* sectionlist.png in Resources */ = {isa = PBXBuildFile; fileRef = 2856088619A9917A00E9874E /* sectionlist.png */; };
+		2856088F19A9917A00E9874E /* sectionlist2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2856088719A9917A00E9874E /* sectionlist2x.png */; };
 		286C8FA9198BF35500B57E9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286C8FA8198BF35500B57E9A /* Foundation.framework */; };
 		286C8FAB198BF35500B57E9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286C8FAA198BF35500B57E9A /* CoreGraphics.framework */; };
 		286C8FAD198BF35500B57E9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286C8FAC198BF35500B57E9A /* UIKit.framework */; };
@@ -43,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		284DD73E19A7BFE400CC416D /* libPods-ABCustomControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ABCustomControl.a"; path = "Pods/build/Debug-iphoneos/libPods-ABCustomControl.a"; sourceTree = "<group>"; };
+		284DD74319A7D02400CC416D /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		285322E419A6F41E005DFF97 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		285322E519A6F41E005DFF97 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		285322E619A6F41E005DFF97 /* DescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionViewController.h; sourceTree = "<group>"; };
@@ -67,6 +78,14 @@
 		2853232E19A6F57B005DFF97 /* EarthQuakeAlert-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "EarthQuakeAlert-Info.plist"; path = "EarthQuakeAlert/EarthQuakeAlert-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2853232F19A6F57B005DFF97 /* EarthQuakeAlert-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EarthQuakeAlert-Prefix.pch"; path = "EarthQuakeAlert/EarthQuakeAlert-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		2853233019A6F57B005DFF97 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EarthQuakeAlert/main.m; sourceTree = SOURCE_ROOT; };
+		2856088019A9917A00E9874E /* sectionarrow_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sectionarrow_down.png; sourceTree = "<group>"; };
+		2856088119A9917A00E9874E /* sectionarrow_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sectionarrow_down@2x.png"; sourceTree = "<group>"; };
+		2856088219A9917A00E9874E /* sectionheader_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sectionheader_blue.png; sourceTree = "<group>"; };
+		2856088319A9917A00E9874E /* sectionheader_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sectionheader_blue@2x.png"; sourceTree = "<group>"; };
+		2856088419A9917A00E9874E /* sectionheader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sectionheader.png; sourceTree = "<group>"; };
+		2856088519A9917A00E9874E /* sectionheader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sectionheader@2x.png"; sourceTree = "<group>"; };
+		2856088619A9917A00E9874E /* sectionlist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sectionlist.png; sourceTree = "<group>"; };
+		2856088719A9917A00E9874E /* sectionlist2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sectionlist2x.png; sourceTree = "<group>"; };
 		286C8FA5198BF35500B57E9A /* EarthQuakeAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthQuakeAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286C8FA8198BF35500B57E9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		286C8FAA198BF35500B57E9A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -78,6 +97,9 @@
 		286C8FD9198BF35500B57E9A /* EarthQuakeAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarthQuakeAlertTests.m; sourceTree = "<group>"; };
 		286C8FEB198BFC9000B57E9A /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		286C8FEC198BFC9000B57E9A /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		28EF475219A790A10064A177 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		C0B501C93EA44D799BF1EE7C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E593B53578034AF8A93348C4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +110,7 @@
 				286C8FAB198BF35500B57E9A /* CoreGraphics.framework in Frameworks */,
 				286C8FAD198BF35500B57E9A /* UIKit.framework in Frameworks */,
 				286C8FA9198BF35500B57E9A /* Foundation.framework in Frameworks */,
+				0015ECBB008E4586A0E1A0D5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +156,14 @@
 		285322F619A6F41E005DFF97 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				2856088019A9917A00E9874E /* sectionarrow_down.png */,
+				2856088119A9917A00E9874E /* sectionarrow_down@2x.png */,
+				2856088219A9917A00E9874E /* sectionheader_blue.png */,
+				2856088319A9917A00E9874E /* sectionheader_blue@2x.png */,
+				2856088419A9917A00E9874E /* sectionheader.png */,
+				2856088519A9917A00E9874E /* sectionheader@2x.png */,
+				2856088619A9917A00E9874E /* sectionlist.png */,
+				2856088719A9917A00E9874E /* sectionlist2x.png */,
 				285322F719A6F41E005DFF97 /* background.png */,
 				285322F819A6F41E005DFF97 /* cellBg.png */,
 			);
@@ -163,13 +194,22 @@
 			path = ABWebService;
 			sourceTree = "<group>";
 		};
+		2856087A19A9913D00E9874E /* ABCustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ABCustomView;
+			sourceTree = "<group>";
+		};
 		286C8F9C198BF35500B57E9A = {
 			isa = PBXGroup;
 			children = (
+				28EF475219A790A10064A177 /* Podfile */,
 				286C8FAE198BF35500B57E9A /* EarthQuakeAlert */,
 				286C8FD3198BF35500B57E9A /* EarthQuakeAlertTests */,
 				286C8FA7198BF35500B57E9A /* Frameworks */,
 				286C8FA6198BF35500B57E9A /* Products */,
+				E593B53578034AF8A93348C4 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,10 +225,13 @@
 		286C8FA7198BF35500B57E9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				284DD74319A7D02400CC416D /* libPods.a */,
+				284DD73E19A7BFE400CC416D /* libPods-ABCustomControl.a */,
 				286C8FA8198BF35500B57E9A /* Foundation.framework */,
 				286C8FAA198BF35500B57E9A /* CoreGraphics.framework */,
 				286C8FAC198BF35500B57E9A /* UIKit.framework */,
 				286C8FCD198BF35500B57E9A /* XCTest.framework */,
+				C0B501C93EA44D799BF1EE7C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,6 +239,7 @@
 		286C8FAE198BF35500B57E9A /* EarthQuakeAlert */ = {
 			isa = PBXGroup;
 			children = (
+				2856087A19A9913D00E9874E /* ABCustomView */,
 				285322F419A6F41E005DFF97 /* Images.xcassets */,
 				286C8FEA198BFC9000B57E9A /* ABExtension */,
 				285322E319A6F41E005DFF97 /* ABViewController */,
@@ -243,6 +287,8 @@
 				286C8FA1198BF35500B57E9A /* Sources */,
 				286C8FA2198BF35500B57E9A /* Frameworks */,
 				286C8FA3198BF35500B57E9A /* Resources */,
+				28EF475119A78FA80064A177 /* Check Pods Manifest.lock */,
+				514E3822CC914933870E318B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,11 +356,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2853231719A6F41E005DFF97 /* background.png in Resources */,
+				2856088E19A9917A00E9874E /* sectionlist.png in Resources */,
+				2856088D19A9917A00E9874E /* sectionheader@2x.png in Resources */,
 				2853231819A6F41E005DFF97 /* cellBg.png in Resources */,
+				2856088A19A9917A00E9874E /* sectionheader_blue.png in Resources */,
+				2856088B19A9917A00E9874E /* sectionheader_blue@2x.png in Resources */,
+				2856088919A9917A00E9874E /* sectionarrow_down@2x.png in Resources */,
 				2853231A19A6F41E005DFF97 /* Main_iPad.storyboard in Resources */,
+				2856088C19A9917A00E9874E /* sectionheader.png in Resources */,
 				2853231619A6F41E005DFF97 /* Images.xcassets in Resources */,
 				2853231B19A6F41E005DFF97 /* Main_iPhone.storyboard in Resources */,
+				2856088819A9917A00E9874E /* sectionarrow_down.png in Resources */,
 				2853231919A6F41E005DFF97 /* InfoPlist.strings in Resources */,
+				2856088F19A9917A00E9874E /* sectionlist2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +381,38 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28EF475119A78FA80064A177 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\ncat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\nexit 1\nfi\n";
+		};
+		514E3822CC914933870E318B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		286C8FA1198BF35500B57E9A /* Sources */ = {
@@ -408,6 +494,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Pods/build/Debug-iphoneos";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,6 +528,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Pods/build/Debug-iphoneos";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -449,28 +537,44 @@
 		};
 		286C8FDE198BF35500B57E9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E593B53578034AF8A93348C4 /* Pods.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EarthQuakeAlert/EarthQuakeAlert-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"/**",
+					"\"${PODS_ROOT}/Headers/ABCustomControl\"/**",
+				);
 				INFOPLIST_FILE = "EarthQuakeAlert/EarthQuakeAlert-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/ABCustomControl\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		286C8FDF198BF35500B57E9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E593B53578034AF8A93348C4 /* Pods.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EarthQuakeAlert/EarthQuakeAlert-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"/**",
+					"\"${PODS_ROOT}/Headers/ABCustomControl\"/**",
+				);
 				INFOPLIST_FILE = "EarthQuakeAlert/EarthQuakeAlert-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/ABCustomControl\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
