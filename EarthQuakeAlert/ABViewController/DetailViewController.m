@@ -10,11 +10,23 @@
 #import "ABRestInterface.h"
 #import "ABParser.h"
 
+typedef enum {
+    Magnutude = 100,
+    Time = 101,
+    Updated = 102,
+    rms = 103,
+    title = 104,
+}cellData;
+
 @interface DetailViewController ()
 
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 @property (strong, nonatomic) IBOutlet UITableView *tableview;
 @property (strong, nonatomic) NSArray *sections;
+
+@property (strong, nonatomic) IBOutlet UILabel *time;
+@property (strong, nonatomic) IBOutlet UILabel *updatedTime;
+@property (strong, nonatomic) IBOutlet UILabel *gap;
 
 - (void)configureView;
 @end
@@ -83,13 +95,26 @@
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return self.sections.count;
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.sections.count;
+    return 1;
 }
+
++ (NSTimeInterval)getUTCFormateDate:(NSDate *)currdate {
+    
+    NSDateComponents *comps = [[NSCalendar currentCalendar]
+                               components:NSDayCalendarUnit | NSYearCalendarUnit | NSMonthCalendarUnit
+                               fromDate:currdate];
+    [comps setHour:0];
+    [comps setMinute:0];
+    [comps setSecond:[[NSTimeZone systemTimeZone] secondsFromGMT]];
+    
+    return [[[NSCalendar currentCalendar] dateFromComponents:comps] timeIntervalSince1970];
+}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
@@ -98,51 +123,36 @@
     }
     cell.backgroundView = [ABCommonUtils backgroundView:@"cellBg"];
     NSDictionary *cellData = [[self.sections objectAtIndex:indexPath.row] objectForKey:@"properties"];
-    cell.textLabel.text = [cellData objectForKey:@"place"];
-    cell.detailTextLabel.text = FORMAT(@"Magnitude:  %@", [cellData objectForKey:@"mag"]);
+
+    [(UILabel *)[cell viewWithTag:Magnutude] setText:FORMAT(@"%@ %@", [cellData objectForKey:@"mag"], [cellData objectForKey:@"magType"])];
+    
+    
+    NSString *stringFromDate = FORMAT(@"%@", [cellData objectForKey:@"time"]);
+    [(UILabel *)[cell viewWithTag:Time] setText:stringFromDate];
+    
+    
+//    [(UILabel *)[cell viewWithTag:Updated] setText:[cellData objectForKey:@"Updated"]];
+    [(UILabel *)[cell viewWithTag:rms] setText:FORMAT(@"%@", [cellData objectForKey:@"rms"])];
+    [(UILabel *)[cell viewWithTag:title] setText:[cellData objectForKey:@"title"]];
     return cell;
 }
 
-
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//	if ([tableView indexPathsForSelectedRows].count) {
-//		if ([[tableView indexPathsForSelectedRows] indexOfObject:indexPath] != NSNotFound) {
-//			return expandedHeight; // Expanded height
-//		}
-//        return contractedHeight; // Normal height
-//	}
-//    return contractedHeight; // Normal height
-//}
-
-
-//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-//    NSDictionary *cellData = [[self.sections objectAtIndex:section] objectForKey:@"properties"];
-//    NSString *title = [cellData objectForKey:@"place"];
-//    return title;
-//}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-//        self.detailViewController.detailItem = [self.sections objectForKey:@"SettingData"];
-//    }
-    [self.tableview beginUpdates];
-    [self.tableview endUpdates];
-    
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSDictionary *cellData = [[self.sections objectAtIndex:section] objectForKey:@"properties"];
+    return [cellData objectForKey:@"place"];
 }
-
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.tableview beginUpdates];
     [self.tableview endUpdates];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    //    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-    //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    //        NSDate *object = _objects[indexPath.row];
-//    [[segue destinationViewController] setDetailItem:[self.sections objectForKey:@"SettingData"]];
-    //    }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+        NSIndexPath *indexPath = [self.tableview indexPathForSelectedRow];
+        NSDictionary *object = [[self.sections objectAtIndex:indexPath.row] objectForKey:@"properties"];
+        [[segue destinationViewController] setDetailItem:object];
+    }
 }
 
 

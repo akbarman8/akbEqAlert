@@ -10,7 +10,7 @@
 
 @interface DescriptionViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
-
+@property (nonatomic, strong) NSArray *dataList;
 
 @end
 
@@ -30,6 +30,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.navigationItem.backBarButtonItem = [ABCommonUtils backButton];
+    NSLog(@"%@", self.detailItem);
+    NSMutableArray *tempList = [NSMutableArray array];
+    for (NSUInteger index =0; index < [self.detailItem allKeys].count; index++) {
+        NSString *key = [[self.detailItem allKeys] objectAtIndex:index];
+        id value = [[self.detailItem allValues] objectAtIndex:index];
+        if (![value isKindOfClass:[NSNull class]]) {
+            [tempList addObject:@{key: value}];
+        }
+    }
+    self.dataList = [NSArray arrayWithArray:tempList];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,5 +63,37 @@
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
 }
+
+
+#pragma mark - Table View
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataList.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
+    }
+    cell.backgroundView = [ABCommonUtils backgroundView:@"cellBg"];
+    
+    
+    cell.textLabel.text = [[[self.dataList objectAtIndex:indexPath.row] allKeys] objectAtIndex:0];
+    
+    id value = [[[self.dataList objectAtIndex:indexPath.row] allValues] objectAtIndex:0];
+    if ([value isKindOfClass:[NSString class]]) {
+        cell.detailTextLabel.text = value;
+    }
+    
+    return cell;
+}
+
+
 
 @end
