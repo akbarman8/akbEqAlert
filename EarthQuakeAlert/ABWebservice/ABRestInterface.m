@@ -29,7 +29,7 @@
 
 @implementation ABRestInterface
 
-static NSTimeInterval requestTimeout = 40;
+static NSTimeInterval requestTimeout = 20;
 NSMutableDictionary *header = nil;
 NSMutableDictionary *authentication = nil;
 NSOperationQueue *operationQueue = nil;
