@@ -23,12 +23,14 @@ typedef enum {
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 @property (strong, nonatomic) IBOutlet UITableView *tableview;
 @property (strong, nonatomic) NSArray *sections;
-
+@property (nonatomic, assign) NSInteger selectedRow;
 @property (strong, nonatomic) IBOutlet UILabel *time;
 @property (strong, nonatomic) IBOutlet UILabel *updatedTime;
 @property (strong, nonatomic) IBOutlet UILabel *gap;
 
 - (void)configureView;
+- (IBAction)onTabHeaderView:(id)sender;
+
 @end
 
 @implementation DetailViewController
@@ -95,12 +97,12 @@ typedef enum {
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.sections.count;
+    return 1;
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return self.sections.count;
 }
 
 + (NSTimeInterval)getUTCFormateDate:(NSDate *)currdate {
@@ -129,8 +131,6 @@ typedef enum {
     
     NSString *stringFromDate = FORMAT(@"%@", [cellData objectForKey:@"time"]);
     [(UILabel *)[cell viewWithTag:Time] setText:stringFromDate];
-    
-    
 //    [(UILabel *)[cell viewWithTag:Updated] setText:[cellData objectForKey:@"Updated"]];
     [(UILabel *)[cell viewWithTag:rms] setText:FORMAT(@"%@", [cellData objectForKey:@"rms"])];
     [(UILabel *)[cell viewWithTag:title] setText:[cellData objectForKey:@"title"]];
@@ -142,9 +142,43 @@ typedef enum {
     return [cellData objectForKey:@"place"];
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 50;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    static NSString *cellID = @"HeaderView";
+    UITableViewCell *headerview = [tableView dequeueReusableCellWithIdentifier:cellID];
+    NSDictionary *cellData = [[self.sections objectAtIndex:section] objectForKey:@"properties"];
+    headerview.backgroundColor = [UIColor redColor];
+    headerview.textLabel.text = [cellData objectForKey:@"place"];
+
+//    UITapGestureRecognizer *touchOnView = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(releaseButAction:)];
+//    [touchOnView setNumberOfTapsRequired:1];
+//    [touchOnView setNumberOfTouchesRequired:1];
+//    [headerview.contentView addGestureRecognizer:touchOnView];
+
+    return headerview.contentView;
+}
+
+
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.tableview beginUpdates];
     [self.tableview endUpdates];
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"accessoryButtonTappedForRowWithIndexPath");
+}
+- (IBAction)onTabHeaderView:(id)sender {
+//    UITableView *tableview = [[sender superview] superview];
+    NSLog(@"%@", sender);
+}
+
+- (IBAction)releaseButAction:(id)sender {
+//    UITableViewCell *cell = (UITableViewCell *)[sender view];
+    NSLog(@"relase== %@", sender);
+//    self.selectedRow = section;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
