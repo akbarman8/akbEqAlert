@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0015ECBB008E4586A0E1A0D5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B501C93EA44D799BF1EE7C /* libPods.a */; };
 		2853230F19A6F41E005DFF97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 285322E519A6F41E005DFF97 /* AppDelegate.m */; };
 		2853231019A6F41E005DFF97 /* DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 285322E719A6F41E005DFF97 /* DescriptionViewController.m */; };
 		2853231119A6F41E005DFF97 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 285322E919A6F41E005DFF97 /* DetailViewController.m */; };
@@ -39,6 +38,9 @@
 		286C8FD8198BF35500B57E9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 286C8FD6198BF35500B57E9A /* InfoPlist.strings */; };
 		286C8FDA198BF35500B57E9A /* EarthQuakeAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 286C8FD9198BF35500B57E9A /* EarthQuakeAlertTests.m */; };
 		286C8FED198BFC9000B57E9A /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 286C8FEC198BFC9000B57E9A /* NSString+Extension.m */; };
+		28DBC0B719B57A8300B328E1 /* ABECollapseHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DBC0B519B57A8300B328E1 /* ABECollapseHeaderView.m */; };
+		28DBC0B819B57A8300B328E1 /* ABECollapseHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DBC0B619B57A8300B328E1 /* ABECollapseHeaderView.xib */; };
+		28DBC0C519B6C73D00B328E1 /* STCollapseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DBC0C419B6C73D00B328E1 /* STCollapseTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +99,11 @@
 		286C8FD9198BF35500B57E9A /* EarthQuakeAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarthQuakeAlertTests.m; sourceTree = "<group>"; };
 		286C8FEB198BFC9000B57E9A /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		286C8FEC198BFC9000B57E9A /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
-		28EF475219A790A10064A177 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		28DBC0B419B57A8300B328E1 /* ABECollapseHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABECollapseHeaderView.h; sourceTree = "<group>"; };
+		28DBC0B519B57A8300B328E1 /* ABECollapseHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABECollapseHeaderView.m; sourceTree = "<group>"; };
+		28DBC0B619B57A8300B328E1 /* ABECollapseHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ABECollapseHeaderView.xib; sourceTree = "<group>"; };
+		28DBC0C319B6C73D00B328E1 /* STCollapseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollapseTableView.h; sourceTree = "<group>"; };
+		28DBC0C419B6C73D00B328E1 /* STCollapseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollapseTableView.m; sourceTree = "<group>"; };
 		C0B501C93EA44D799BF1EE7C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E593B53578034AF8A93348C4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +116,6 @@
 				286C8FAB198BF35500B57E9A /* CoreGraphics.framework in Frameworks */,
 				286C8FAD198BF35500B57E9A /* UIKit.framework in Frameworks */,
 				286C8FA9198BF35500B57E9A /* Foundation.framework in Frameworks */,
-				0015ECBB008E4586A0E1A0D5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +135,9 @@
 		285322E319A6F41E005DFF97 /* ABViewController */ = {
 			isa = PBXGroup;
 			children = (
+				28DBC0B419B57A8300B328E1 /* ABECollapseHeaderView.h */,
+				28DBC0B519B57A8300B328E1 /* ABECollapseHeaderView.m */,
+				28DBC0B619B57A8300B328E1 /* ABECollapseHeaderView.xib */,
 				285322E419A6F41E005DFF97 /* AppDelegate.h */,
 				285322E519A6F41E005DFF97 /* AppDelegate.m */,
 				285322E619A6F41E005DFF97 /* DescriptionViewController.h */,
@@ -204,7 +212,6 @@
 		286C8F9C198BF35500B57E9A = {
 			isa = PBXGroup;
 			children = (
-				28EF475219A790A10064A177 /* Podfile */,
 				286C8FAE198BF35500B57E9A /* EarthQuakeAlert */,
 				286C8FD3198BF35500B57E9A /* EarthQuakeAlertTests */,
 				286C8FA7198BF35500B57E9A /* Frameworks */,
@@ -271,6 +278,8 @@
 		286C8FEA198BFC9000B57E9A /* ABExtension */ = {
 			isa = PBXGroup;
 			children = (
+				28DBC0C319B6C73D00B328E1 /* STCollapseTableView.h */,
+				28DBC0C419B6C73D00B328E1 /* STCollapseTableView.m */,
 				286C8FEB198BFC9000B57E9A /* NSString+Extension.h */,
 				286C8FEC198BFC9000B57E9A /* NSString+Extension.m */,
 			);
@@ -363,6 +372,7 @@
 				2856088B19A9917A00E9874E /* sectionheader_blue@2x.png in Resources */,
 				2856088919A9917A00E9874E /* sectionarrow_down@2x.png in Resources */,
 				2853231A19A6F41E005DFF97 /* Main_iPad.storyboard in Resources */,
+				28DBC0B819B57A8300B328E1 /* ABECollapseHeaderView.xib in Resources */,
 				2856088C19A9917A00E9874E /* sectionheader.png in Resources */,
 				2853231619A6F41E005DFF97 /* Images.xcassets in Resources */,
 				2853231B19A6F41E005DFF97 /* Main_iPhone.storyboard in Resources */,
@@ -422,10 +432,12 @@
 				286C8FED198BFC9000B57E9A /* NSString+Extension.m in Sources */,
 				2853232C19A6F4C9005DFF97 /* ABParser.m in Sources */,
 				2853232D19A6F4C9005DFF97 /* ABRestInterface.m in Sources */,
+				28DBC0C519B6C73D00B328E1 /* STCollapseTableView.m in Sources */,
 				2853231219A6F41E005DFF97 /* MasterViewController.m in Sources */,
 				2853230F19A6F41E005DFF97 /* AppDelegate.m in Sources */,
 				2853232B19A6F4C9005DFF97 /* ABCommonUtils.m in Sources */,
 				2853231019A6F41E005DFF97 /* DescriptionViewController.m in Sources */,
+				28DBC0B719B57A8300B328E1 /* ABECollapseHeaderView.m in Sources */,
 				2853231119A6F41E005DFF97 /* DetailViewController.m in Sources */,
 				2853233219A6F57B005DFF97 /* main.m in Sources */,
 			);
