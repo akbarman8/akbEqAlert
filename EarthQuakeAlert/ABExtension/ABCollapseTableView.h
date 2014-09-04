@@ -1,6 +1,6 @@
 //
-//  STCollapseTableView.h
-//  STCollapseTableView
+//  ABCollapseTableView.h
+//  ABCollapseTableView
 //  EarthQuakeAlert
 //
 //  Created by Amit Kumar Barman on 8/2/14.
@@ -11,12 +11,12 @@
 #import <UIKit/UIKit.h>
 
 /**
- *	STCollapseTableView is a UITableView subclass that automatically collapse and/or expand your sections.
+ *	ABCollapseTableView is a UITableView subclass that automatically collapse and/or expand your sections.
  *
  *  Just fill your datasource like for any table view and the magic will happen.
  *  By default all the sections are closed.
  */
-@interface STCollapseTableView : UITableView
+@interface ABCollapseTableView : UITableView
 
 /**
  *	This property allow to enable/disable the exclusivity.
@@ -26,7 +26,7 @@
 @property (nonatomic, assign) BOOL exclusiveSections;
 
 /**
- *	This property allows STCollapseTableView to automatically handle tap on headers in order to collapse or expand sections.
+ *	This property allows ABCollapseTableView to automatically handle tap on headers in order to collapse or expand sections.
  *  If NO, you'll have to manually call the open or close methods if you want any content to be displayed.
  *  Default value is YES.
  */

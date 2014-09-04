@@ -11,23 +11,41 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sectionheader.png" translatesAutoresizingMaskIntoConstraints="NO" id="lJM-0r-G0P">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sectionheader.png" translatesAutoresizingMaskIntoConstraints="NO" id="lJM-0r-G0P">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3">
                     <rect key="frame" x="27" y="5" width="288" height="45"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.19607843459999999" green="0.19607843459999999" blue="0.19607843459999999" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="sectionarrow_down.png" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sectionarrow_down.png" translatesAutoresizingMaskIntoConstraints="NO" id="6">
                     <rect key="frame" x="4" y="17" width="20" height="20"/>
                     <autoresizingMask key="autoresizingMask"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="XFf-GW-zSQ"/>
+                        <constraint firstAttribute="width" constant="20" id="ZuC-wa-6Sl"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lJM-0r-G0P" secondAttribute="trailing" id="7Si-ls-8rA"/>
+                <constraint firstItem="3" firstAttribute="centerY" secondItem="6" secondAttribute="centerY" id="Eqh-z5-Su3"/>
+                <constraint firstItem="6" firstAttribute="top" secondItem="2" secondAttribute="top" constant="17" id="LoH-cr-fEx"/>
+                <constraint firstItem="lJM-0r-G0P" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="Oki-oJ-BuC"/>
+                <constraint firstItem="3" firstAttribute="leading" secondItem="6" secondAttribute="trailing" constant="3" id="OrD-YV-oDw"/>
+                <constraint firstItem="3" firstAttribute="top" secondItem="2" secondAttribute="top" constant="5" id="PUB-Wc-pnO"/>
+                <constraint firstAttribute="trailing" secondItem="3" secondAttribute="trailing" constant="5" id="Qb7-jh-cfy"/>
+                <constraint firstAttribute="centerX" secondItem="lJM-0r-G0P" secondAttribute="centerX" id="SVa-oI-oLK"/>
+                <constraint firstItem="6" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="4" id="Z4W-4b-fqe"/>
+                <constraint firstAttribute="bottom" secondItem="lJM-0r-G0P" secondAttribute="bottom" id="f91-Rz-bfT"/>
+                <constraint firstAttribute="bottom" secondItem="6" secondAttribute="bottom" constant="17" id="gdk-Th-D6P"/>
+                <constraint firstItem="lJM-0r-G0P" firstAttribute="top" secondItem="2" secondAttribute="top" id="jVq-I5-bWj"/>
+            </constraints>
             <connections>
                 <outlet property="arrowImage" destination="6" id="8"/>
                 <outlet property="titleLabel" destination="3" id="7"/>

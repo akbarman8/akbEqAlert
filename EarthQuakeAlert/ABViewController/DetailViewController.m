@@ -10,7 +10,7 @@
 #import "ABRestInterface.h"
 #import "ABParser.h"
 #import "ABECollapseHeaderView.h"
-#import "STCollapseTableView.h"
+#import "ABCollapseTableView.h"
 //----------------------------------------------------------------------------------------------------------------------
 typedef enum {
     Magnutude = 100,
@@ -25,7 +25,7 @@ typedef enum {
 
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 @property (strong, nonatomic) NSMutableArray *sections;
-@property (weak, nonatomic) IBOutlet STCollapseTableView *tableView;
+@property (weak, nonatomic) IBOutlet ABCollapseTableView *tableView;
 
 - (void)configureView;
 
@@ -65,9 +65,7 @@ typedef enum {
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    if (self.masterPopoverController != nil) {
-        [self.masterPopoverController dismissPopoverAnimated:YES];
-    }
+    self.tableView.backgroundView = [ABCommonUtils backgroundView:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -138,6 +136,7 @@ typedef enum {
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     ABECollapseHeaderView* view = [ABECollapseHeaderView expandableHeaderViewWithSection:section];
+    view.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     NSDictionary *cellData = [[self.sections objectAtIndex:section] objectForKey:@"properties"];
 	view.titleLabel.text = [cellData objectForKey:@"place"];
     return view;

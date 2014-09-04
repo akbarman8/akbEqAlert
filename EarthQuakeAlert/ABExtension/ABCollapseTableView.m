@@ -1,6 +1,6 @@
 //
-//  STCollapseTableView.m
-//  STCollapseTableView
+//  ABCollapseTableView.m
+//  ABCollapseTableView
 //  EarthQuakeAlert
 //
 //  Created by Amit Kumar Barman on 8/2/14.
@@ -8,11 +8,11 @@
 //
 // ***********************************************************************************/
 
-#import "STCollapseTableView.h"
+#import "ABCollapseTableView.h"
 
 #import <objc/runtime.h>
 
-@interface STCollapseTableView () <UITableViewDataSource, UITableViewDelegate>
+@interface ABCollapseTableView () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, assign) id<UITableViewDataSource> collapseDataSource;
 @property (nonatomic, assign) id<UITableViewDelegate> collapseDelegate;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation STCollapseTableView
+@implementation ABCollapseTableView
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
