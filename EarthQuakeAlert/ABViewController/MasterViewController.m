@@ -65,7 +65,7 @@ NSString const* urlStr=@"http://earthquake.usgs.gov/earthquakes/feed/v1.0/summar
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.backgroundView = [ABCommonUtils backgroundView:@"cellBg"];;
+    cell.backgroundView = [ABCommonUtils backgroundView:@"background"];
     cell.textLabel.text = [self.eqType objectAtIndex:indexPath.row];
     return cell;
 }

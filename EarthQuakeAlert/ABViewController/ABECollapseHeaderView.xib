@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sectionheader.png" translatesAutoresizingMaskIntoConstraints="NO" id="lJM-0r-G0P">
+                <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="lJM-0r-G0P">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
@@ -53,7 +53,7 @@
         </view>
     </objects>
     <resources>
+        <image name="background.png" width="1600" height="900"/>
         <image name="sectionarrow_down.png" width="14" height="13"/>
-        <image name="sectionheader.png" width="320" height="30"/>
     </resources>
 </document>

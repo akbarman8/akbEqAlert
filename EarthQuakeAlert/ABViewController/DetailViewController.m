@@ -57,7 +57,7 @@ typedef enum {
     }
     self.sections = [NSMutableArray arrayWithArray:self.detailItem];
     self.navigationItem.backBarButtonItem = [ABCommonUtils backButton];
-    self.tableView.backgroundView = [ABCommonUtils backgroundView:nil];
+    self.tableView.backgroundView = [ABCommonUtils backgroundView:@"background"];
     [self.tableView reloadData];
     [self.tableView openSection:0 animated:NO];
 }
