@@ -97,7 +97,16 @@ typedef enum {
     self.masterPopoverController = nil;
 }
 
+- (NSString *)datefromData:(double)interval {
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:(NSTimeInterval)(interval/1000)];
 
+    NSDateFormatter *dateformatter = [[NSDateFormatter alloc] init];
+    [dateformatter setLocale:[NSLocale currentLocale]];
+    [dateformatter setDateFormat:@"MMM dd, yyyy HH:MM:SS a"];
+    NSString *dateString = [dateformatter stringFromDate:date];
+    dateformatter = nil;
+    return dateString;
+}
 //----------------------------------------------------------------------------------------------------------------------
 #pragma mark - Table View - 
 //----------------------------------------------------------------------------------------------------------------------
@@ -118,9 +127,8 @@ typedef enum {
     NSDictionary *cellData = [[self.sections objectAtIndex:indexPath.row] objectForKey:@"properties"];
     
     [(UILabel *)[cell viewWithTag:Magnutude] setText:FORMAT(@"%@ %@", [cellData objectForKey:@"mag"], [cellData objectForKey:@"magType"])];
-    NSString *stringFromDate = FORMAT(@"%@", [cellData objectForKey:@"time"]);
-    [(UILabel *)[cell viewWithTag:Time] setText:stringFromDate];
-    [(UILabel *)[cell viewWithTag:Updated] setText:[cellData objectForKey:@"Updated"]];
+    [(UILabel *)[cell viewWithTag:Time] setText:[self datefromData:[[cellData objectForKey:@"time"] doubleValue]]];
+    [(UILabel *)[cell viewWithTag:Updated] setText:[self datefromData:[[cellData objectForKey:@"updated"] doubleValue]]];
     [(UILabel *)[cell viewWithTag:rms] setText:FORMAT(@"%@", [cellData objectForKey:@"rms"])];
     [(UILabel *)[cell viewWithTag:title] setText:[cellData objectForKey:@"title"]];
 	return cell;
@@ -146,8 +154,7 @@ typedef enum {
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDictionary *object = [[self.sections objectAtIndex:indexPath.row] objectForKey:@"properties"];
-        [[segue destinationViewController] setDetailItem:object];
+        [[segue destinationViewController] setDetailItem:[self.sections objectAtIndex:indexPath.row]];
     }
 }
 

@@ -7,10 +7,13 @@
 //
 
 #import "DescriptionViewController.h"
+#import <MapKit/MapKit.h>
 
-@interface DescriptionViewController ()
+@interface DescriptionViewController () <UISplitViewControllerDelegate, MKMapViewDelegate>
+
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 @property (nonatomic, strong) NSArray *dataList;
+@property (nonatomic, strong) IBOutlet MKMapView *mapview;
 
 @end
 
@@ -30,16 +33,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.navigationItem.backBarButtonItem = [ABCommonUtils backButton];
+    [self.view addSubview:[ABCommonUtils backgroundView:nil]];
     NSLog(@"%@", self.detailItem);
-    NSMutableArray *tempList = [NSMutableArray array];
-    for (NSUInteger index =0; index < [self.detailItem allKeys].count; index++) {
-        NSString *key = [[self.detailItem allKeys] objectAtIndex:index];
-        id value = [[self.detailItem allValues] objectAtIndex:index];
-        if (![value isKindOfClass:[NSNull class]]) {
-            [tempList addObject:@{key: value}];
-        }
-    }
-    self.dataList = [NSArray arrayWithArray:tempList];
+    NSArray *coordinate = [self.detailItem valueForKeyPath:@"geometry.coordinates"];
+    CGFloat xpos = [[coordinate objectAtIndex:0] floatValue];
+    CGFloat ypos = [[coordinate objectAtIndex:1] floatValue];
+    [self.mapview setCenter:CGPointMake(xpos, ypos)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,36 +61,6 @@
     // Called when the view is shown again in the split view, invalidating the button and popover controller.
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
-}
-
-
-#pragma mark - Table View
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataList.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
-    }
-    cell.backgroundView = [ABCommonUtils backgroundView:@"cellBg"];
-    
-    
-    cell.textLabel.text = [[[self.dataList objectAtIndex:indexPath.row] allKeys] objectAtIndex:0];
-    
-    id value = [[[self.dataList objectAtIndex:indexPath.row] allValues] objectAtIndex:0];
-    if ([value isKindOfClass:[NSString class]]) {
-        cell.detailTextLabel.text = value;
-    }
-    
-    return cell;
 }
 
 

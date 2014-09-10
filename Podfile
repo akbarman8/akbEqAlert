@@ -10,3 +10,8 @@ target 'EarthQuakeAlertTests', :exclusive => true do
 end
 
 #link_with 'EarthQuake', 'EarthQuakeTests'
+post_install do |installer|
+    installer.project.targets.each do |target|
+        puts target.name
+    end
+end

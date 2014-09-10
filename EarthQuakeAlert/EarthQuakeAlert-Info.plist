@@ -22,6 +22,24 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
+	<key>EQSettingData</key>
+	<dict>
+		<key>EQDuration</key>
+		<array>
+			<string>Past Hour</string>
+			<string>Past Day</string>
+			<string>Past 7 Days</string>
+			<string>Past 30 Days</string>
+		</array>
+		<key>EQType</key>
+		<array>
+			<string>Significant Earthquakes</string>
+			<string>M4.5+ Earthquakes</string>
+			<string>M2.5+ Earthquakes</string>
+			<string>M1.0+ Earthquakes</string>
+			<string>All Earthquakes</string>
+		</array>
+	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIMainStoryboardFile</key>
@@ -32,6 +50,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
 	<key>UIStatusBarTintParameters</key>
 	<dict>
 		<key>UINavigationBar</key>
@@ -55,23 +75,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>EQSettingData</key>
-	<dict>
-		<key>EQType</key>
-		<array>
-			<string>Significant Earthquakes</string>
-			<string>M4.5+ Earthquakes</string>
-			<string>M2.5+ Earthquakes</string>
-			<string>M1.0+ Earthquakes</string>
-			<string>All Earthquakes</string>
-		</array>
-		<key>EQDuration</key>
-		<array>
-			<string>Past Hour</string>
-			<string>Past Day</string>
-			<string>Past 7 Days</string>
-			<string>Past 30 Days</string>
-		</array>
-	</dict>
 </dict>
 </plist>
